@@ -1,0 +1,159 @@
+/* Base styles */
+.register-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem;
+}
+
+.register-div {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.register-h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.register-h2 {
+    color: #34495e;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.register-input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.register-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.register-input::placeholder {
+    color: #bdc3c7;
+}
+
+.register-button {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.register-button-cancel,
+.register-button-accept {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.register-button-cancel {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.register-button-accept {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.register-button-cancel:hover,
+.register-button-accept:hover {
+    transform: translateY(-2px);
+}
+
+.register-button-cancel:hover {
+    background-color: #c0392b;
+}
+
+.register-button-accept:hover {
+    background-color: #27ae60;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 768px) {
+    .register-section {
+        padding: 1.5rem;
+    }
+
+    .register-h1 {
+        font-size: 2rem;
+    }
+
+    .register-div {
+        padding: 2rem;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 480px) {
+    .register-section {
+        padding: 1rem;
+    }
+
+    .register-h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .register-div {
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .register-input {
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .register-button {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+    }
+
+    .register-button-cancel,
+    .register-button-accept {
+        width: 100%;
+        padding: 0.8rem;
+    }
+}
+
+/* Small Mobile Responsive */
+@media screen and (max-width: 320px) {
+    .register-h1 {
+        font-size: 1.5rem;
+    }
+
+    .register-div {
+        padding: 1rem;
+    }
+
+    .register-h2 {
+        font-size: 1rem;
+    }
+}

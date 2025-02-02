@@ -1,0 +1,111 @@
+/* Estilo general para el modal */
+.delete-rol-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fondo semitransparente */
+    z-index: 9999;
+}
+
+/* Contenedor del contenido del modal */
+.delete-rol-div {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Títulos del modal */
+.delete-rol-h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.delete-rol-h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Contenedor de botones */
+.delete-rol-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Estilo de los botones */
+.delete-rol-button-accept,
+.delete-rol-button-delete {
+    width: 48%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-rol-button-accept {
+    background-color: #ccc;
+    color: #333;
+}
+
+.delete-rol-button-accept:hover {
+    background-color: #bbb;
+}
+
+.delete-rol-button-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-rol-button-delete:hover {
+    background-color: #c0392b;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .delete-rol-div {
+        padding: 15px;
+    }
+
+    .delete-rol-h1 {
+        font-size: 1.5rem;
+    }
+
+    .delete-rol-h2 {
+        font-size: 1rem;
+    }
+
+    .delete-rol-button-accept,
+    .delete-rol-button-delete {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

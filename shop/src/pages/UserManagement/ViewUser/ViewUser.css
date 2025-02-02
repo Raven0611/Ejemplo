@@ -1,0 +1,193 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+}
+
+/* Container */
+.view-user-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* View User Div */
+.view-user-div {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Header */
+.view-user-h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Search & Filter Section */
+.view-user-div-searchs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.view-user-input-button-create,
+.view-user-input-search,
+.view-user-input-button-search,
+.view-user-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.view-user-input-button-create {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.view-user-input-button-create:hover {
+    background-color: #45a049;
+}
+
+.view-user-input-button-search {
+    background-color: #008CBA;
+    color: #fff;
+    cursor: pointer;
+}
+
+.view-user-input-button-search:hover {
+    background-color: #007bb5;
+}
+
+.view-user-select {
+    width: auto;
+}
+
+/* Table Section */
+.view-user-table {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* Buttons */
+.view-user-button-edit,
+.view-user-button-delete {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-user-button-edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.view-user-button-edit:hover {
+    background-color: #45a049;
+}
+
+.view-user-button-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.view-user-button-delete:hover {
+    background-color: #e53935;
+}
+
+/* No Results Message */
+td[colspan="6"] {
+    text-align: center;
+    color: #888;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .view-user-div-searchs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .view-user-input-button-create,
+    .view-user-input-search,
+    .view-user-input-button-search,
+    .view-user-select {
+        width: 100%;
+    }
+
+    th,
+    td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .view-user-button-edit,
+    .view-user-button-delete {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .view-user-h1 {
+        font-size: 1.5rem;
+    }
+
+    .view-user-div {
+        padding: 15px;
+    }
+
+    .view-user-input-button-create,
+    .view-user-input-search,
+    .view-user-input-button-search,
+    .view-user-select {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        font-size: 0.85rem;
+        padding: 6px;
+    }
+
+    .view-user-button-edit,
+    .view-user-button-delete {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+    }
+}

@@ -1,0 +1,200 @@
+/* Base styles */
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 1rem;
+}
+
+.login-h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.login-div {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-h2 {
+    color: #34495e;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.login-input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.login-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.login-input::placeholder {
+    color: #bdc3c7;
+}
+
+.login-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.login-button-cancel,
+.login-button-accept {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.login-button-cancel {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.login-button-accept {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.login-button-cancel:hover,
+.login-button-accept:hover {
+    transform: translateY(-2px);
+}
+
+.login-button-cancel:hover {
+    background-color: #c0392b;
+}
+
+.login-button-accept:hover {
+    background-color: #27ae60;
+}
+
+/* Estilo para el mensaje de error */
+.login-error-message {
+    color: red;
+    /* Texto en rojo */
+    font-size: 14px;
+    /* Tamaño de fuente pequeño */
+    margin-top: 10px;
+    /* Espacio por encima del mensaje */
+    text-align: center;
+    /* Centrar el texto */
+    font-weight: bold;
+    /* Hacer el texto en negrita */
+    padding: 10px;
+    /* Espacio alrededor del texto */
+    border: 1px solid red;
+    /* Borde rojo */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    background-color: #fff0f0;
+    /* Fondo ligeramente rosado */
+    max-width: 100%;
+    /* Asegura que el mensaje no se salga del contenedor */
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte al ancho total */
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 768px) {
+    .login-section {
+        padding: 1.5rem;
+    }
+
+    .login-h1 {
+        font-size: 2rem;
+    }
+
+    .login-div {
+        padding: 2rem;
+    }
+
+    .login-error-message {
+        font-size: 13px;
+        /* Tamaño de fuente un poco más pequeño */
+        padding: 9px;
+        /* Padding ajustado */
+    }
+
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 480px) {
+    .login-section {
+        padding: 1rem;
+    }
+
+    .login-h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .login-div {
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .login-input {
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .login-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+    }
+
+    .login-button-cancel,
+    .login-button-accept {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .login-error-message {
+        font-size: 12px;
+        /* Tamaño de fuente más pequeño en móviles */
+        padding: 8px;
+        /* Reducir el padding en móviles */
+    }
+}
+
+/* Small Mobile Responsive */
+@media screen and (max-width: 320px) {
+    .login-h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-div {
+        padding: 1rem;
+    }
+
+    .login-h2 {
+        font-size: 1rem;
+    }
+}

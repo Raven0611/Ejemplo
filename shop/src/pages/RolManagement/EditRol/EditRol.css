@@ -1,0 +1,126 @@
+/* Contenedor principal */
+.edit-rol-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9ecef;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo del formulario */
+.edit-rol-div {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px 20px;
+}
+
+/* Título del formulario */
+.edit-rol-h1 {
+    font-size: 1.6rem;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas de los campos */
+.edit-rol-label {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 500;
+}
+
+/* Estilo de los campos de texto y select */
+.edit-rol-input,
+.edit-rol-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.edit-rol-input:focus,
+.edit-rol-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Contenedor de botones */
+.edit-rol-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Botones */
+.edit-rol-button-cancel,
+.edit-rol-button-accept {
+    width: 30%;
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.edit-rol-button-cancel {
+    width: 100%;
+    background-color: #dee2e6;
+    color: #495057;
+}
+
+.edit-rol-button-cancel:hover {
+    background-color: #ced4da;
+    transform: scale(1.05);
+}
+
+.edit-rol-button-accept {
+
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.edit-rol-button-accept:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .edit-rol-div {
+        padding: 20px 15px;
+    }
+
+    .edit-rol-h1 {
+        font-size: 1.4rem;
+    }
+
+    .edit-rol-label {
+        font-size: 0.9rem;
+    }
+
+    .edit-rol-input,
+    .edit-rol-select {
+        font-size: 0.9rem;
+    }
+
+    .edit-rol-button-cancel,
+    .edit-rol-button-accept {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

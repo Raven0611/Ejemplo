@@ -1,0 +1,127 @@
+/* Estilo general para el modal */
+.delete-category-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+.delete-category-div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.delete-category-h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.delete-category-h2 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.delete-category-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.delete-category-button-accept,
+.delete-category-button-delete {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-category-button-accept {
+    background-color: #ccc;
+    color: #333;
+}
+
+.delete-category-button-accept:hover {
+    background-color: #bbb;
+}
+
+.delete-category-button-delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.delete-category-button-delete:hover {
+    background-color: #c0392b;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .delete-category-div {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .delete-category-h1 {
+        font-size: 1.3rem;
+    }
+
+    .delete-category-h2 {
+        font-size: 1rem;
+    }
+
+    .delete-category-button-accept,
+    .delete-category-button-delete {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .delete-category-div {
+        padding: 10px;
+    }
+
+    .delete-category-h1 {
+        font-size: 1.1rem;
+    }
+
+    .delete-category-h2 {
+        font-size: 0.9rem;
+    }
+
+    .delete-category-button-accept,
+    .delete-category-button-delete {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
